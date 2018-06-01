@@ -3,6 +3,7 @@
 ## Bug fixes
 
 - PIM-7400: Fix 'ensure-indexes' timeout command
+- PIM-7459: Fix completeness performances issues with high number of locales on MongoDB
 
 # 1.7.22 (2018-06-05)
 
