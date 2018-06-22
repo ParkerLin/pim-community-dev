@@ -4,7 +4,7 @@ parameters:
     pim_enrich.controller.product.class:                      Pim\Bundle\EnrichBundle\Controller\ProductController
     pim_enrich.controller.product_model.class:                Pim\Bundle\EnrichBundle\Controller\ProductModelController
     pim_enrich.controller.group.class:                        Pim\Bundle\EnrichBundle\Controller\GroupController
-    pim_enrich.controller.association_type.class:             Pim\Bundle\EnrichBundle\Controller\AssociationTypeController
+    pim_enrich.controller.association_type.class:             Akeneo\Pim\Structure\Bundle\Controller\Ui\AssociationTypeController
     pim_enrich.controller.file.class:                         Pim\Bundle\EnrichBundle\Controller\FileController
     pim_enrich.controller.rest.association_type.class:        Pim\Bundle\EnrichBundle\Controller\Rest\AssociationTypeController
     pim_enrich.controller.rest.category.class:                Pim\Bundle\EnrichBundle\Controller\Rest\CategoryController
@@ -85,18 +85,6 @@ services:
             - '@pim_enrich.form.handler.group'
             - '@pim_enrich.form.group'
             - '@pim_catalog.factory.group'
-
-    pim_enrich.controller.association_type:
-        class: '%pim_enrich.controller.association_type.class%'
-        arguments:
-            - '@request_stack'
-            - '@router'
-            - '@translator'
-            - '@pim_catalog.repository.association'
-            - '@pim_enrich.form.handler.association_type'
-            - '@pim_enrich.form.association_type'
-            - '@pim_catalog.remover.association_type'
-            - '@pim_catalog.repository.association_type'
 
     pim_enrich.controller.file:
         class: '%pim_enrich.controller.file.class%'

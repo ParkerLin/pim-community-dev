@@ -1,6 +1,6 @@
 <?php
 
-namespace Pim\Bundle\EnrichBundle\Controller;
+namespace Akeneo\Pim\Structure\Bundle\Controller\Ui;
 
 use Akeneo\Pim\Structure\Component\Model\AssociationType;
 use Akeneo\Tool\Component\StorageUtils\Remover\RemoverInterface;

@@ -164,3 +164,15 @@ services:
         class: 'Akeneo\Pim\Structure\Bundle\Controller\InternalApi\AttributeTypeController'
         arguments:
             - '@pim_catalog.registry.attribute_type'
+
+    pim_enrich.controller.association_type:
+        class: '%pim_enrich.controller.association_type.class%'
+        arguments:
+            - '@request_stack'
+            - '@router'
+            - '@translator'
+            - '@pim_catalog.repository.association'
+            - '@pim_enrich.form.handler.association_type'
+            - '@pim_enrich.form.association_type'
+            - '@pim_catalog.remover.association_type'
+            - '@pim_catalog.repository.association_type'
