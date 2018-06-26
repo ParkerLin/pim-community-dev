@@ -4,6 +4,7 @@
 
 - PIM-7400: Fix 'ensure-indexes' timeout command
 - PIM-7456: Security vulnerabilities in dependencies
+- PIM-7366: Fix performance issue related to reloading of selected category children ids on the grid
 
 # 1.7.22 (2018-06-05)
 
